@@ -1,0 +1,371 @@
+body{
+    margin:0;
+    padding:0;
+    color: azure;
+    background-image: linear-gradient(to right, black , rgb(48, 47, 47));
+    font-family : sans-serif;
+}
+.name1{
+    font-family: papyrus;
+    font-size: large;
+}
+#cool{
+    font-family: papyrus;
+    font-size: large;
+}
+a{
+    text-decoration : none;
+}
+button{
+    border:0;
+    outline: none;
+    font-family:inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+.navbar{
+    height:80px;
+    background-image: linear-gradient(to right, black , rgb(48, 47, 47));
+    padding : 20px 40px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .name .a{
+    font-size: 24px;
+    font-weight: 700;
+    color : white;
+}
+.menu{
+    display: flex;
+    align-items: center ;
+    gap: 32px;
+}
+.menu-links{
+    display:flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+}
+.log-in{
+    font-weight:500;
+    padding: 12px 22px;
+    background-color : transparent;
+    color: #999999;
+    border-radius:10px;
+    border: 2px solid grey;
+    transition: 0.2s;
+}
+.log-in:hover{
+    background-color: grey;
+    color: white;
+}
+#intro{
+    text-align: justify ;
+}
+#edu1{
+    display: flex;
+    justify-content:space-evenly;
+}
+.edu{
+    background-color: #0f0f0f;
+    width:380px;
+    height:200px;
+    color: azure;
+    border: 2px solid grey;
+    border-radius:20px;
+    padding:8px;
+    margin:20px;
+    box-shadow: 2px 4px 12px grey;
+}
+.edu:hover{
+    box-shadow:2px 4px 12px ;
+    transition: 1s;
+    transform: scale(1.1);
+}
+h3{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+.introdiv{
+    display:flex;
+    margin: 50px 25px 0px 25px;
+}
+.image1 img{
+    background-color: #0f0f0f;
+    margin-left:15px;
+    height:252px;
+    width:250px;
+    border-radius:50%;
+    border: 2px solid grey;
+    transition: 1s;
+    animation-name: jiggle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+
+}
+.stats{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: baseline;
+}
+/* .codeforces{
+    border:2px solid grey;
+    border-radius: 10px;
+}
+.codeforces img{
+    width:200px;
+    height:140px;
+}
+.codechef{
+    border:2px solid grey;
+    border-radius: 10px;
+}
+.codechef img{
+    width:200px;
+    height:140px;
+} */
+@keyframes jiggle{
+    from {tranform : scale(1);}
+    to {transform : scale(1.05);}
+}
+@keyframes animate{
+    50% {content :"Web Developer";}
+}
+#cool::before{
+    content : "Sport Programmer";
+    animation : animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+ul{
+    list-style-type: none;
+}
+.code1{
+    position: relative;
+    width : 250px;
+    height : 200px;
+    border: 2px solid grey;
+}
+.image{
+    display : block;
+    width : 100%;
+    height : 100%;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height:100%;
+    width:100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color:grey;
+}
+.overlay:hover{
+    opacity:0.75;
+    cursor:pointer;
+}
+.text{
+    color : black;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+}
+.foot{
+    display:flex;
+    justify-content: space-between;
+}
+.soc{
+   width: 70px;
+   height: 50px;
+   margin: 5px;
+}
+.soc1{
+    width: 55px;
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+.soc2{
+    padding-top: 5px;
+    width:60px;
+    height:40px;
+    margin: 5px;
+}
+.socialsimage{
+    display:flex;
+    justify-content: space-around;
+}
+.tooltip{
+    position : relative;
+    display: inline-block;
+    cursor:pointer;
+}
+.tooltip .tooltiptext {
+    visibility : hidden;
+    color: azure;
+    text-align: center;
+/* positioning tooltip*/
+   position : absolute;
+   z-index : 1;
+   bottom : 100%;
+   left: -10px;
+   
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    cursor:pointer;
+}
+.skill{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.skill1{
+    position: relative;
+    width : 100px;
+    height : 100px;
+    margin : 5px;
+}
+.skill1 img{
+    display : block;
+    width : 100%;
+    height : 100%;
+}
+.overlay1{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height:100%;
+    width:100%;
+    opacity: 0;
+    transition: 0.75s ease;
+    background-color: yellow ;
+}
+.overlay1:hover{
+    opacity:1;
+    cursor:pointer;
+}
+.text1 p{
+    color : black;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+}
+.sam1{
+    
+    margin-top: 25px;
+    margin-bottom:25px;
+    height: 350px;
+    width: 420px;
+    border: 2px solid grey;
+    background-color: black;
+    border-radius: 5px;
+}
+.send{
+    border: 2px solid grey;
+    border-radius: 3px;
+    background-color: transparent;
+    color: grey;
+    transition: 0.5s;
+    margin: 5px;
+}
+.send:hover{
+    background-color: grey;
+    color: black;
+}
+.formback{
+    background-color: grey;
+    color: yellow;
+    width:400px;
+}
+.formback1{
+    background-color: grey;
+    color: yellow;
+    width:400px;
+    height: 100px;
+}
+.formss{
+    margin:5px;
+}
+.batam{
+    width:0;
+    height:0;
+    visibility:hidden;
+}
+@media  (max-width: 500px) {
+    *{flex-wrap : wrap;
+ }
+     .foot{
+         justify-content: space-around;
+     }
+     .code1{
+         margin-top: 30px;
+     }
+     .introdiv{
+         justify-content: center;
+     }
+     h3{
+         text-align: center;
+     }
+     .edu{
+         height : 220px;
+     }
+     .text1 p{
+         font-size: 15px;
+     }
+     .sam1{
+       
+        margin : 0 auto;
+        width: 320px;
+        margin-top: 20px;
+     }
+     .formback{
+        width: 300px;
+     }
+     .formback1{
+        width:300px;
+    }
+    .batam{
+        width: 50px;
+        height: 30px;
+        visibility: visible;
+    }
+    .menu {
+        position: relative;
+        display: inline-block;
+        margin-top:25px;
+      }
+      .menu-links {
+        display: none;
+        position: absolute;
+        background-color:grey;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        top: 100%;
+        left: -160px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+      .menu:hover .menu-links {
+        display: flex;
+        flex-direction: column;
+      }
+      .log-in{
+        visibility: hidden;
+        width:0;
+        height: 0;
+        padding:0;
+      }
+}
